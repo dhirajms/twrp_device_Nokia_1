@@ -1,6 +1,6 @@
-## TWRP for Moto C Plus
+## TWRP for Nokia1
 
-Minimal device tree for building TWRP for panelli
+Minimal device tree for building TWRP for Nokia1
 
 ## procedure
 
@@ -8,10 +8,10 @@ Minimal device tree for building TWRP for panelli
 
 (2) repo sync
 
-(3) git clone https://github.com/DhirajSurvase/twrp_device_moto_panelli device/moto/panelli
+(3) git clone https://github.com/DhirajSurvase/twrp_device_Nokia_1 device/nokia/nokia1
 
 (4) lunch
 
-(5) select option no for omni_panelli-eng
+(5) select option no for omni_nokia1-eng
 
 (6)make recoveryimage -j64

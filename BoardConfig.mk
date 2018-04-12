@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/moto/panelli
+LOCAL_PATH := device/nokia/nokia1
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6737m
@@ -36,7 +36,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_PREBUILT_KERNEL := device/moto/panelli/zImage-dtb
+TARGET_PREBUILT_KERNEL := device/nokia/nokia1/zImage-dtb
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
@@ -58,7 +58,7 @@ TARGET_KMODULES := true
 
 # Assert
 #rip ported recoveries
-TARGET_OTA_ASSERT_DEVICE := Moto,"panelli",panelli,Moto_C,Moto C,C,Moto C Plus,Moto_C_plus,namath
+#TARGET_OTA_ASSERT_DEVICE :=
 
 # MTK Hardware
 BOARD_HAS_MTK_HARDWARE := true
@@ -68,7 +68,7 @@ MTK_HARDWARE := true
 #COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
 # TWRP
-TW_DEVICE_VERSION := MotoCplus-DhirajMS
+TW_DEVICE_VERSION := nokiaCplus-DhirajMS
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -100,6 +100,6 @@ TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/battery/power_supply/battery"
 TW_ALWAYS_RMRF := true
 TW_NO_SCREEN_BLANK := true
 
-PRODUCT_COPY_FILES += device/moto/panelli/twrp.fstab:recovery/root/etc/twrp.fstab
-PRODUCT_COPY_FILES += device/moto/panelli/recovery.fstab:recovery/root/etc/recovery.fstab
-PRODUCT_COPY_FILES += device/moto/panelli/fstab.mt6735:recovery/root/etc/fstab.mt6735
+PRODUCT_COPY_FILES += device/nokia/nokia1/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/nokia/nokia1/recovery.fstab:recovery/root/etc/recovery.fstab
+PRODUCT_COPY_FILES += device/nokia/nokia1/fstab.mt6735:recovery/root/etc/fstab.mt6735

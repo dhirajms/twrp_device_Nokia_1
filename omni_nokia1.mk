@@ -1,7 +1,7 @@
 ## Specify phone tech before including full_phone
 
 # Release name
-PRODUCT_RELEASE_NAME := panelli
+PRODUCT_RELEASE_NAME := nokia1
 
 # Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
@@ -17,19 +17,19 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/moto/panelli/recovery.fstab:recovery/root/recovery.fstab
+    device/nokia/nokia1/recovery.fstab:recovery/root/recovery.fstab
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := panelli
-PRODUCT_NAME := omni_panelli
-PRODUCT_BRAND := Moto
-PRODUCT_MODEL := Moto C Plus
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_DEVICE := nokia1
+PRODUCT_NAME := omni_nokia1
+PRODUCT_BRAND := nokia
+PRODUCT_MODEL := nokia1
+PRODUCT_MANUFACTURER := nokia
 
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
+PRODUCT_GMS_CLIENTID_BASE := android-nokia
 
 # Available languages
 PRODUCT_LOCALES := en_US en_GB ru_RU uk_UA tr_TR sk_SK vi_VN fr_FR ar_EG

@@ -1,1 +1,1 @@
-add_lunch_combo omni_panelli-eng
+add_lunch_combo omni_nokia1-eng
